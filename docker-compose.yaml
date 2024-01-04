@@ -32,8 +32,8 @@ services:
       - POSTGRES_DB=quarkus
       - POSTGRES_USER=quarkus
       - POSTGRES_PASSWORD=quarkus
-      - PGUSER=quarkus
-      - POSTGRES_URL="postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB}"
+      - PGUSER="quarkus"
+      - POSTGRES_URL="postgres://quarkus:quarkus@postgres:5432/quarkus"
     volumes:
       - ./pgdata:/var/lib/postgresql/data
     networks:
