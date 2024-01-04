@@ -1,7 +1,7 @@
 version: "3.8"
 
 services:
-  delayedservice:
+  delayservice:
     image: busybox
     command: >
       sh -c "echo 'Delaying datacollector startup for 180 seconds, waiting for database to be ready...'; sleep 180; echo 'Delay complete.'"
