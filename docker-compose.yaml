@@ -47,6 +47,6 @@ services:
 
 networks:
   front-tier:
-    name: front-tier
+    name: collector-front-tier
   back-tier:
-    name: back-tier
+    name: collector-back-tier
