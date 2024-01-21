@@ -9,7 +9,7 @@ services:
     container_name: data_collector
     image: ghcr.io/laendleenergy/data_collector:latest
     ports:
-      - "8080:8080"
+      - "8080:9000"
     networks:
       - front-tier
       - back-tier
