@@ -25,6 +25,7 @@ services:
       - MP_MESSAGING_INCOMING_SIMULATOR=85.215.60.151
       - MP_MESSAGING_INCOMING_SIMULATOR_PORT=1884
       - QUARKUS_HTTP_PORT=9000
+      - QUARKUS_REDIS_HOSTS=redis://85.215.60.151:6379
   collector-database:
     container_name: collector-database
     image: timescale/timescaledb:latest-pg14
